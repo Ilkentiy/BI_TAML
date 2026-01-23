@@ -1,0 +1,13 @@
+{
+  "support_size": 32,
+  "query_size": 32,
+  "min_samples_per_task": 64,
+  "hot_to_cold_ratio": 2.0,
+  "max_cold_samples": 2500,
+  "cold_threshold_hours": 3,
+  "n_time_periods": 8,
+  "total_tasks": 795,
+  "cold_tasks": 265,
+  "hot_tasks": 530,
+  "strategy": "correct_ratio_limited_cold"
+}

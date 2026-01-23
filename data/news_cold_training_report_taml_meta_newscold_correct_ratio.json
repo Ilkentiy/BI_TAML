@@ -1,0 +1,30 @@
+{
+  "timestamp": "2025-12-22 19:04:46",
+  "model": "NewsColdModel (Только новостной холодный старт)",
+  "dataset_info": {
+    "total_tasks": 795,
+    "cold_tasks": 265,
+    "hot_tasks": 530,
+    "embedding_dim": 250
+  },
+  "architecture": {
+    "total_parameters": 195969,
+    "input_dimensions": 208
+  },
+  "results": {
+    "test_overall_auc": 0.9176114647495741,
+    "test_cold_auc": 0.9204961165368517,
+    "test_hot_auc": 0.899241831741926,
+    "test_samples": 7632,
+    "difference_cold_hot": 0.02125428479492575
+  },
+  "goal_achieved": true,
+  "training_history": {
+    "final_train_auc": 0.9678590787715595,
+    "final_val_auc": 0.9286879072307129,
+    "best_val_auc": 0.9326882611990136,
+    "final_train_f1": 0.8851363361655231,
+    "final_val_f1": 0.8432362038092137,
+    "best_val_f1": 0.8454442466418515
+  }
+}
