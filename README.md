@@ -26,35 +26,37 @@ pip install -r requirements.txt
 ```
 ## Project Structure
 
+```
 Bi_TAML/
-├── data/raw/                         # Original dataset
-│   ├── clicks/                       # Hourly click files
-│   ├── articles_metadata.csv
-│   └── articles_embeddings.pickle
-├── data/processed/enriched/          # Enriched features
-│   ├── train_enriched.csv
-│   ├── test_enriched.csv
-│   └── user_clusters.pkl
-├── src/data/                         # Data processing scripts
-│   ├── enrich_data.py
-│   ├── create_clusters.py
-│   
-├── src/models/                       # Model implementations
-│   ├── two_tower_ranker.py
-│   └── fease_model.py
-├── scripts/                          # Training scripts
+├── data/
+│   ├── raw/
+│   │   ├── clicks/
+│   │   │   └── clicks_hour_*.csv
+│   │   ├── articles_metadata.csv
+│   │   └── articles_embeddings.pickle
+│   └── processed/
+│       └── enriched/
+│           ├── train_enriched.csv
+│           ├── test_enriched.csv
+│           └── user_clusters.pkl
+├── src/
+│   ├── data/
+│   │   ├── enrich_data.py
+│   │   └── create_clusters.py
+│   └── models/
+│       ├── two_tower_ranker.py
+│       └── fease_model.py
+├── scripts/
 │   ├── config.py
 │   ├── train_two_tower.py
 │   ├── train_fease.py
 │   ├── train_popularity.py
-│   ├── train_random.py
-│  
-├── notebooks/                        # Jupyter notebooks
-│  
-├── models/                           # Saved models
+│   └── train_random.py
+├── notebooks/
+├── models/
 │   ├── two_tower_ranker.pth
 │   └── fease_ranker.pth
-├── results/                          # Results
+├── results/
 │   ├── metrics/
 │   │   └── metrics.csv
 │   └── plots/
@@ -62,6 +64,7 @@ Bi_TAML/
 │       └── model_comparison.png
 ├── requirements.txt
 └── README.md
+```
 
 ## License
 MIT License
